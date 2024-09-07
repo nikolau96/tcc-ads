@@ -1,14 +1,9 @@
 <?php
-    $dbHost = "localhost";
-    $dbPorta = "3306";
-    $dbBanco = "sgc";
-    $dbUsuario = "root";
-    $dbSenha = "tiarute";
-
-    $conexao = mysqli_connect($dbHost, $dbPorta, $dbBanco, $dbUsuario, $dbSenha);
-
-    if(mysqli_connect_errno($conexao)){
-        echo "Erro ao acessar o banco de dados";
-        die();
+    try{
+        $conexao = new PDO('mysql:host = localhost;dbBanco=sgc',"root","tiarute");
+        $conexao -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        //echo "Conectado com sucesso";
+    }catch(PDOException $e){
+        echo $e->getMessage();
     }
 ?>
