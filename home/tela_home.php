@@ -4,6 +4,8 @@
     </head>
     <body>
         <h1>Teste</h1>
+        <br>
+        <a href="../login/logout.php">Sair</a>
     </body>
 </html>
 <?php
