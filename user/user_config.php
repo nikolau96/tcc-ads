@@ -6,3 +6,6 @@
         <h3>Configuração de Usuário</h3>
     </body>
 </html>
+<?php
+    echo "teste";
+?>
