@@ -15,6 +15,8 @@
         <br>
         <a href="../user/user_config.php">Configuração</a>
         <br>
+        <a href="../login/user_list.php">Lista de Usuários</a>
+        <br>
         <a href="../login/logout.php">Sair</a>
     </body>
 </html>

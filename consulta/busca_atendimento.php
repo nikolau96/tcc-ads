@@ -1,6 +1,6 @@
 <?php
     include("../db/database.php");
-    $SQL = "SELECT * FROM vendedor";
+    $SQL = "SELECT * FROM atendimento";
     $registro = mysqli_query($conexao, $SQL);
     $qtdRegistro = mysqli_num_rows($registro);
     if($qtdRegistro == 0){

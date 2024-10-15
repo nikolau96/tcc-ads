@@ -13,7 +13,7 @@
         return;
     }
     require_once("../db/database.php");
-    $SQL = "INSERT INTO `sgc`.`vendedor (nome, cpf, sexo, dt_nascimento, telefone, celular, email, conselho, nr_conselho)` VALUES ($nome, $cpf, $dt_nascimento, $telefone, $celular, $email, $conselho, $nr_conselho)";
+    $SQL = "INSERT INTO vendedor VALUES ($nome, $cpf, $dt_nascimento, $telefone, $celular, $email, $conselho, $nr_conselho)";
     $stmt = $conexao->prepare($SQL);
     if($stmt->execute() == true){
         echo "Vendedor cadastrado com sucesso";
