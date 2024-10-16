@@ -13,7 +13,7 @@
         return;
     }
     require_once("../db/database.php");
-    $SQL = "INSERT INTO `usuario` (`nome`, `cpf`, `sexo`, `cargo`, `setor`, `dt_admissao`, `status`, `login`, `senha`) VALUES ($nome, $cpf, $sexo, $cargo, $setor, $dt_admissao, $status, $login, $senha)";
+    $SQL = "INSERT INTO `usuario` (`nome`, `cpf`, `sexo`, `cargo`, `setor`, `dt_admissao`, `status`, `login`, `senha`) VALUES ('$nome', '$cpf', '$sexo', '$cargo', '$setor', '$dt_admissao', '$status', '$login', '$senha')";
     $stmt = $conexao->prepare($SQL);
     if($stmt->execute() == true){
         echo "Usuário cadastrado com sucesso";

@@ -5,7 +5,9 @@
     <body>
         <h1>Teste</h1>
         <br>
-        <a href="../cadastro/tela_cadastro_atendimento.html">Cadastro de Cliente</a>
+        <a href="../cadastro/tela_cadastro_atendimento.html">Cadastro de Atendimento</a>
+        <br>
+        <a href="../cadastro/tela_cadastro_cliente.html">Cadastro de Cliente</a>
         <br>
         <a href="../cadastro/tela_cadastro_vendedor.html">Cadastro de Vendedor</a>
         <br>

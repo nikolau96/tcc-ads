@@ -12,7 +12,7 @@
         return;
     }
     require_once("../db/database.php");
-    $SQL = "INSERT INTO `atendimento` (`dt_atendimento`, `cliente_id`, `vendedor_id`, `usuario_id`, `produto_servico`, `assunto`, `descricao`, `solucao`) VALUES ($dt_atendimento, $cliente, $vendedor, $usuario, $produto, $assunto, $descricao, $solucao)";
+    $SQL = "INSERT INTO atendimento (dt_atendimento, cliente_id, vendedor_id, usuario_id, produto_servico, assunto, descricao, solucao) VALUES ('$dt_atendimento', '$cliente', '$vendedor', '$usuario', '$produto', '$assunto', '$descricao', '$solucao')";
     $stmt = $conexao->prepare($SQL);
     if($stmt->execute() == true){
         echo "Atendimento cadastrado com sucesso";
