@@ -9,16 +9,17 @@
     $login = trim($_POST['login']);
     $senha = trim($_POST['senha']);
     if(($nome == "") || ($cpf == "") || ($cargo == "") || ($setor == "") || $status == "" || $login == "" || $senha == ""){
-        echo "Erro ao cadastrar o usuário!";
+        echo "<p>Erro ao cadastrar o usuário!</p>";
         return;
     }
     require_once("../db/database.php");
     $SQL = "INSERT INTO `usuario` (`nome`, `cpf`, `sexo`, `cargo`, `setor`, `dt_admissao`, `status`, `login`, `senha`) VALUES ('$nome', '$cpf', '$sexo', '$cargo', '$setor', '$dt_admissao', '$status', '$login', '$senha')";
     $stmt = $conexao->prepare($SQL);
     if($stmt->execute() == true){
-        echo "Usuário cadastrado com sucesso";
+        echo "<p>Usuário cadastrado com sucesso</p>";
+        echo "<button><a href='../home/tela_home.php'>Voltar</a></button>";
     }else{
-        echo "Erro ao cadastrar o usuário" . $stmt->errorInfo();
+        echo "<p>Erro ao cadastrar o usuário" . $stmt->errorInfo() . "</p>";
     }
     unset($conexao);
 ?>

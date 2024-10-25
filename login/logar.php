@@ -1,18 +1,30 @@
 <?php
     session_start();
     include('../db/database.php');
+    include("../functions/verificar.php");
     if(empty($_POST['login']) || empty($_POST['senha'])){
+        echo "<p>Erro: login ou senha n&atilde;o informado</p>";
         header('Location: ../index.php');
         exit();
     }
-    $usuario = $_POST['login'];
-    $senha = $_POST['senha'];
+    $usuario = mysqli_real_escape_string($conexao, $_POST['login']);
+    $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
+    $existe = verificaStatus($usuario);
+    if($existe == true){
+        echo "<p>Acesso Negado</p>";
+        header('Location: ../index.php');
+        exit();
+    }
     $SQL = "SELECT * FROM usuario WHERE login = '{$usuario}' AND senha = '{$senha}'";
-    $stmt = $conexao->prepare($SQL);
-    $retorno = $stmt->execute();
+    $stmt = mysqli_query($conexao, $SQL);
+    $retorno = mysqli_num_rows($stmt);
     if($retorno == 1){
         $_SESSION['login'] = $usuario;
         header('Location: ../home/tela_home.php');
+        exit();
+    }else{
+        $_SESSION['nao_autenticado'] = true;
+        header('Location: ../index.php');
         exit();
     }
 ?>

@@ -31,3 +31,6 @@
         ?>
     </body>
 </html>
+<?php
+    include("../login/verifica_login.php");
+?>

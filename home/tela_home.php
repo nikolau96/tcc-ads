@@ -5,21 +5,27 @@
     <body>
         <h1>Teste</h1>
         <br>
-        <a href="../cadastro/tela_cadastro_atendimento.html">Cadastro de Atendimento</a>
+        <a href="../cadastro/tela_cadastro_atendimento.php">Cadastro de Atendimento</a>
         <br>
-        <a href="../cadastro/tela_cadastro_cliente.html">Cadastro de Cliente</a>
+        <a href="../cadastro/tela_cadastro_cliente.php">Cadastro de Cliente</a>
         <br>
-        <a href="../cadastro/tela_cadastro_vendedor.html">Cadastro de Vendedor</a>
+        <a href="../cadastro/tela_cadastro_vendedor.php">Cadastro de Vendedor</a>
         <br>
-        <a href="../cadastro/tela_cadastro_user.html">Cadastro de Usuário</a>
+        <a href="../cadastro/tela_cadastro_user.php">Cadastro de Usuário</a>
         <br>
-        <a href="../consulta/tela_consulta.html">Consulta</a>
+        <a href="../consulta/tela_consulta.php">Consulta</a>
         <br>
         <a href="../user/user_config.php">Configuração</a>
         <br>
         <a href="../login/user_list.php">Lista de Usuários</a>
         <br>
         <a href="../login/logout.php">Sair</a>
+        <br>
+        <a href="/user/alterar_senha.php">Alterar senha</a>
+        <br>
+        <a href="/user/alterar_status.php">Alterar status</a>
+        <br>
+        <a href="/alterar/tela_altera_atendimento.php">Alterar atendimento</a>
     </body>
 </html>
 <?php

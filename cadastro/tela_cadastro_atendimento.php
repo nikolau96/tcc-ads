@@ -8,7 +8,7 @@
         <form action="/cadastro/grava_atendimento.php" method="post">
             <label for="dtAtendimento">
                 <h4>Data de Atendimento</h4>
-                <input type="text" id="dtAtendimento" name="dtAtendimento">
+                <input type="date" id="dtAtendimento" name="dtAtendimento">
             </label>
             <br>
             <label for="cliente">
@@ -50,3 +50,6 @@
             <input type="submit" value="Gravar">
     </body>
 </html>
+<?php
+    include("../login/verifica_login.php");
+?>

@@ -32,7 +32,7 @@
             <br>
             <label for="dtAdmissao">
                 <h4>Data de Admiss&atilde;o</h4><br>
-                <input type="text" id="dtAdmissao" name="dtAdmissao">
+                <input type="date" id="dtAdmissao" name="dtAdmissao">
             </label>
             <br>
             <label for="status">
@@ -55,3 +55,6 @@
         </form>
     </body>
 </html>
+<?php
+    include("../login/verifica_login.php");
+?>

@@ -22,7 +22,7 @@
             <br>
             <label for="dtNascimento">
                 <h4>Data de Nascimento</h4>
-                <input type="text" id="dtNascimento" name="dtNascimento">
+                <input type="date" id="dtNascimento" name="dtNascimento">
             </label>
             <br>
             <label for="telefone">
@@ -53,6 +53,8 @@
             <input type="reset" value="Cancelar">
             <input type="submit" value="Gravar">
         </form>
-        <p>teste</p>
     </body>
 </html>
+<?php
+    include("../login/verifica_login.php");
+?>

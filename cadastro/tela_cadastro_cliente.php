@@ -20,7 +20,7 @@
             <input type="text" id="sexo" name="sexo">
             <br><br>
             <h4>Data de Nascimento</h4><br>
-            <input type="text" id="dtNascimento" name="dtNascimento">
+            <input type="date" id="dtNascimento" name="dtNascimento">
             <br><br>
             <h4>CEP</h4><br>
             <input type="text" id="cep" name="cep">
@@ -57,3 +57,6 @@
         </form>
     </body>
 </html>
+<?php
+    include("../login/verifica_login.php");
+?>

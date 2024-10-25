@@ -15,16 +15,22 @@
     $celular = trim($_POST['celular']);
     $email = trim($_POST['email']);
     if(($nome == "") || ($cpf == "") || ($dt_nascimento == "") || ($cep == "") || $logradouro == "" || $nr_endereco == "" || $bairro == "" || $cidade == "" || $uf == "" || $celular == "" || $email == ""){
-        echo "Erro ao cadastrar o cliente!";
+        echo "<p>Erro ao cadastrar o cliente!</p>";
         return;
     }
     require_once("../db/database.php");
+    include("../functions/verificar.php");
+    $existe = verificaCliente($nome, $cpf);
+    if($existe == true){
+        echo "<p>Erro: Esse cliente j&aacute existe no sistema!</p>";
+    }
     $SQL = "INSERT INTO cliente (nome, cpf, rg, sexo, dt_nascimento, cep, logradouro, end_num, complemento, bairro, cidade, uf, telefone, celular, email) VALUES ('$nome', '$cpf', '$rg', '$sexo', '$dt_nascimento', '$cep', '$logradouro', '$nr_endereco', '$complemento', '$bairro', '$cidade', '$uf', '$telefone', '$celular', '$email')";
     $stmt = $conexao->prepare($SQL);
     if($stmt->execute() == true){
-        echo "Cliente cadastrado com sucesso";
+        echo "<p>Cliente cadastrado com sucesso</p>";
+        echo "<button><a href='../home/tela_home.php'>Voltar</a></button>";
     }else{
-        echo "Erro ao cadastrar o cliente" . $stmt->errorInfo();
+        echo "<p>Erro ao cadastrar o cliente" . $stmt->errorInfo() . "</p>";
     }
     unset($conexao);
 ?>

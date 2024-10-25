@@ -1,44 +1,27 @@
-<html>
-    <head>
-        <title>Sistema de Gerenciamento de Clientes</title>
-    </head>
-    <body>
-        <h3>Alterar Status de Usuário</h3>
-        <br>
-        <h4>Pesquisar usuário</h4>
-        <br>
-        <form method="post">
-            <input type="text" id="user" name="user">
-            <br>
-            <input type="submit" value="Pesquisar">
-        </form>
-    </body>
-</html>
 <?php
     include("../db/database.php");
-    $user_name = trim($_POST['user']);
-    $SQL = "SELECT * FROM usuario WHERE nome = {$user_name}";
-    $registro = mysqli_query($conexao, $SQL);
+    $user = trim($_POST['user']);
+    $status = trim($_POST['status']);
+    if($user == "" || $status == ""){
+        echo "<p>Erro: dados n&atilde;o informados</p>";
+        return;
+    }
+    $select = "SELECT `status` FROM usuario WHERE nome = '{$user}'";
+    $registro = mysqli_query($conexao, $select);
     $qtdRegistro = mysqli_num_rows($registro);
-    if($qtdRegistro == 0){
-        echo "<p>Nenhum registro encontrado</p>";
-    }
     if($qtdRegistro > 1){
-        echo "<p>Erro: H&aacute mais usu&aacute;rios cadastrados com esse nome</p>";
+        echo "<p>Erro</p>";
+        return;
     }
-    if($qtdRegistro == 1){
-        $status;
-        if($status == "Ativo"){
-            echo "<p>Esse usu&aacute;rio est&aacute Ativo. Deseja inativar?";
-            echo "<br>";
-            echo "<button>N&aatilde;o</button>";
-            echo "<button>Sim</button>";
-        }
-        if($status == "Inativo"){
-            echo "<p>Esse usu&aacute;rio est&aacute Inativo. Deseja inativar?";
-            echo "<br>";
-            echo "<button>N&aatilde;o</button>";
-            echo "<button>Sim</button>";
-        }
+    $SQL = "UPDATE usuario SET `status` = '{$status}' WHERE nome = '{$user}'";
+    $stmt = $conexao->prepare($SQL);
+    $retorno = $stmt->execute();
+    if($retorno == true){
+        echo "<p>Status alterado com sucesso</p>";
+        echo "<button><a href='../home/tela_home.php'>Voltar</a></button>";
+    }else{
+        echo "<p>Erro ao alterar a senha " . $stmt->errorInfo() . "</p>";
+        return;
     }
+    unset($conexao);
 ?>
