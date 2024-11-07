@@ -2,23 +2,30 @@
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+        <link rel="stylesheet" type="text/css" href="/css/style-index.css">
     </head>
     <body>
-        <div>
-            <img src="/logo/SGC_logo_nova.png">
-        </div>
         <div id="formLogin">
-            <form action="login/logar.php" method="POST">
-                <div class="input">
-                    <input type="text" id="login" name="login">
+            <div id="logo-index">
+                <img src="/logo/SGC_logo_nova.png">
+            </div>
+            <div id="form-index">
+                <div class="input-field">
+                    <form action="login/logar.php" method="POST">
+                        <label for="login" class="label">Login</label>
+                        <div class="input">
+                            <input type="text" id="login" name="login">
+                        </div>
+                        <label for="password" class="label">Senha</label>
+                        <div class="input">
+                            <input type="password" id="senha" name="senha">
+                        </div>
+                        <div id="btnLogin">
+                            <input type="submit" value="Entrar">
+                        </div>
+                    </form>
                 </div>
-                <div class="input">
-                    <input type="password" id="senha" name="senha">
-                </div>
-                <div id="btnLogin">
-                    <input type="submit" value="Entrar">
-                </div>
-            </form>
+            </div>
         </div>
         <div id="dev">
             <p>Desenvolvido por Nickolas Markus da Silva Costa</p>

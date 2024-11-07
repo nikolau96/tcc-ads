@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    height: auto;
+}
+#formLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo-index{
+    left: 639px;
+    top: 27px;
+}
+#logo-index img{
+    width: 144px;
+    height: 162px;
+}
+#form-index{
+    display: flex;
+    position: relative;
+    height: 414px;
+    width: 428px;
+    border-radius: 8px;
+    padding: 24px;
+    flex-direction: column;
+    gap: 24px;
+}
+.input-field{
+    height: 70px;
+    width: 380px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-style: hidden;
+    outline: none;
+}
+.label{
+    margin-bottom: 20px;
+}

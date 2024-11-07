@@ -2,22 +2,21 @@
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/style-home.css">
     </head>
     <body>
         <header>
             <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
             <div id="linha"></div>
         </header>
-        <div class="menuLateral">
-            <nav>
-                <div>
-                    <button id="btnClose" onclick="fechaMenu();"></button>
-                </div>
+        <div id="menuLateral" class="menuLateral">
+            <nav class="menu">
                 <div id="icon">
+                    <button id="btnClose" onclick="fechaMenu();"></button>
                     <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
                     <p>Ol&aacute;, Seja bem-vindo!</p>
                 </div>
-                <div>
+                <div class="lista-nav">
                     <ul>
                         <li><a href="../login/user_list.php">Lista de usu&aacute;rios</a></li>
                         <li><a href="../user/alterar_senha.php">Alterar senha</a></li>
@@ -29,10 +28,12 @@
                 </div>
             </nav>
         </div>
-        <div id="body">
+        <div id="tela-body" class="tela-body">
             <div></div>
             <div>
-                <button type="button" onclick="mostraMenu();">Menu</button>
+                <span style="font-size:30px; cursor:pointer;">
+                    <button type="button" onclick="mostraMenu();">Menu</button>
+                </span>
             </div>
             <div>
                 <div>
