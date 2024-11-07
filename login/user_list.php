@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../logo/SGC_logo_nova.png">
     </head>
     <body>
         <?php
@@ -28,6 +29,7 @@
             }
             echo "</table>";
             print_r($linha);
+            echo "<button><a href='../home/tela_home.php'>Voltar</a></button>";
         ?>
     </body>
 </html>

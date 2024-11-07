@@ -8,17 +8,18 @@
             <img src="../favicon.png" alt="Logo do Sistema">
             <div id="linha"></div>
         </header>
-        <div>
-            <h3>Consulta</h3>
+        <div class="title">
+            <h3>Cadastro</h3>
         </div>
         <div>
             <div>
-                <label class="subtitle">O que deseja consultar?</label>
+                <label class="subtitle">O que deseja cadastrar?</label>
             </div>
             <div>
-                <a href="/consulta/tela_vendedor.php">Vendedor</a>
-                <a href="/consulta/tela_atendimento.php">Atendimento</a>
-                <a href="/consulta/tela_cliente.php">Cliente</a>
+                <a href="../cadastro/tela_cadastro_atendimento.php">Atendimento</a>
+                <a href="../cadastro/tela_cadastro_cliente.php">Cliente</a>
+                <a href="../cadastro/tela_cadastro_vendedor.php">Vendedor</a>
+                <a href="../cadastro/tela_cadastro_user.php">Usu&aacute;rio</a>
             </div>
         </div>
         <div>
@@ -27,5 +28,5 @@
     </body>
 </html>
 <?php
-    include("../login/verifica_login.php");
+    include('../login/verifica_login.php');
 ?>

@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../logo/SGC_logo_nova.png">
     </head>
 </html>
 <?php

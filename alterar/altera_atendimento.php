@@ -9,6 +9,7 @@
     $stmt = $conexao->prepare($SQL);
     if($stmt->execute()){
         echo "<p>Cadastro alterado com sucesso</p>";
+        echo "<button><a href='../home/tela_home.php'>Voltar</a></button>";
     }else{
         echo "<p>Erro ao alterar o cadastro</p>";
     }

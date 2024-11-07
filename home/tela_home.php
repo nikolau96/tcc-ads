@@ -1,32 +1,50 @@
 <html>
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
     </head>
     <body>
-        <h1>Teste</h1>
-        <br>
-        <a href="../cadastro/tela_cadastro_atendimento.php">Cadastro de Atendimento</a>
-        <br>
-        <a href="../cadastro/tela_cadastro_cliente.php">Cadastro de Cliente</a>
-        <br>
-        <a href="../cadastro/tela_cadastro_vendedor.php">Cadastro de Vendedor</a>
-        <br>
-        <a href="../cadastro/tela_cadastro_user.php">Cadastro de Usuário</a>
-        <br>
-        <a href="../consulta/tela_consulta.php">Consulta</a>
-        <br>
-        <a href="../user/user_config.php">Configuração</a>
-        <br>
-        <a href="../login/user_list.php">Lista de Usuários</a>
-        <br>
-        <a href="../login/logout.php">Sair</a>
-        <br>
-        <a href="/user/alterar_senha.php">Alterar senha</a>
-        <br>
-        <a href="/user/alterar_status.php">Alterar status</a>
-        <br>
-        <a href="/alterar/tela_altera_atendimento.php">Alterar atendimento</a>
+        <header>
+            <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
+            <div id="linha"></div>
+        </header>
+        <div class="menuLateral">
+            <nav>
+                <div>
+                    <button id="btnClose" onclick="fechaMenu();"></button>
+                </div>
+                <div id="icon">
+                    <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
+                    <p>Ol&aacute;, Seja bem-vindo!</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="../login/user_list.php">Lista de usu&aacute;rios</a></li>
+                        <li><a href="../user/alterar_senha.php">Alterar senha</a></li>
+                        <li><a href="../user/alterar_status.php">Alterar status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="../login/logout.php">Sair</a>
+                </div>
+            </nav>
+        </div>
+        <div id="body">
+            <div></div>
+            <div>
+                <button type="button" onclick="mostraMenu();">Menu</button>
+            </div>
+            <div>
+                <div>
+                    <a href="../cadastro/tela_cadastro_principal.php">Cadastro</a>
+                </div>
+                <div>
+                    <a href="../consulta/tela_consulta.php">Consulta</a>
+                </div>
+            </div>
+        </div>
     </body>
+    <script src="../js/menu_lateral.js"></script>
 </html>
 <?php
     include('../login/verifica_login.php');

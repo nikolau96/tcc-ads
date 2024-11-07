@@ -1,3 +1,9 @@
+<html>
+    <head>
+        <title>Sistema de Gerenciamento de Clientes</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../logo/SGC_logo_nova.png">
+    </head>
+</html>
 <?php
     include("../db/database.php");
     //$nome_filtro = filter_input(INPUT_POST, 'nome');
