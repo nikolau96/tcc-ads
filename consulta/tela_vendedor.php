@@ -24,7 +24,6 @@
         </div>
         <div>
             <button type="button"><a href="../home/tela_home.php">Voltar</a></button>
-            <button type="button"><a href="../alterar/tela_altera_vendedor.php">Alterar Cadastro</a></button>
         </div>
     </body>
 </html>

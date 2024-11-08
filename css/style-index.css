@@ -1,6 +1,6 @@
 body{
     background-color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: auto;
     height: auto;
 }
@@ -12,8 +12,6 @@ body{
 #logo-index{
     left: 639px;
     top: 27px;
-}
-#logo-index img{
     width: 144px;
     height: 162px;
 }
@@ -39,4 +37,19 @@ body{
 }
 .label{
     margin-bottom: 20px;
+}
+#rodape{
+    clear: both;
+    margin-top: 300px;
+}
+.copyright{
+    text-align: center;
+}
+#btn-github{
+    border: none;
+    background-color: white;
+}
+#btn-linkedin{
+    border: none;
+    background-color: white;
 }
