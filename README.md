@@ -25,3 +25,10 @@ Obs.: Para a elaboração da monografia, foi utilizado o Microsoft Word e para a
 * Monografia: em breve
 * Sistema: em breve
 * Hospedagem utilizada: em breve
+
+## Sugestões Futuras
+A seguir, uma lista de ideias para o projeto em contribuições futuras. Essas ideias foram consideradas durante o desenvolvimento, porém, por conta do prazo de entrega e da complexidade de algumas funcionalidades, elas não foram executadas.
+* Log de auditoria no sistema
+* Tema escuro
+* Status de atendimento
+* Implementação de escolha automática de um vendedor quando um atendimento é cadastrado
