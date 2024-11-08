@@ -13,7 +13,7 @@ O projeto consiste em desenvolver um sistema de gerenciamento de atendimento ao 
 ## Tecnologias utilizadas
 
 ![PHP](https://img.icons8.com/?size=100&id=fAMVO_fuoOuC&format=png&color=000000)
-![MySQL](https://img.icons8.com/?size=100&id=39858&format=png&color=000000) 
+![MySQL](https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000)
 ![HTML](https://img.icons8.com/?size=100&id=20909&format=png&color=000000)
 ![CSS](https://img.icons8.com/?size=100&id=21278&format=png&color=000000)
 ![Javascript](https://img.icons8.com/?size=100&id=108784&format=png&color=000000)
@@ -22,6 +22,13 @@ O projeto consiste em desenvolver um sistema de gerenciamento de atendimento ao 
 Obs.: Para a elaboração da monografia, foi utilizado o Microsoft Word e para a defesa do trabalho na banca foi utilizado o Microsoft PowerPoint
 
 ## Disponibilidade
-Monografia: em breve
-Sistema: em breve
-Hospedagem utilizada: em breve
+* Monografia: em breve
+* Sistema: em breve
+* Hospedagem utilizada: em breve
+
+## Sugestões Futuras
+A seguir, uma lista de ideias para o projeto em contribuições futuras. Essas ideias foram consideradas durante o desenvolvimento, porém, por conta do prazo de entrega e da complexidade de algumas funcionalidades, elas não foram executadas.
+* Log de auditoria no sistema
+* Tema escuro
+* Status de atendimento
+* Implementação de escolha automática de um vendedor quando um atendimento é cadastrado
