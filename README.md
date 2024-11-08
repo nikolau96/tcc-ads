@@ -22,6 +22,6 @@ O projeto consiste em desenvolver um sistema de gerenciamento de atendimento ao 
 Obs.: Para a elaboração da monografia, foi utilizado o Microsoft Word e para a defesa do trabalho na banca foi utilizado o Microsoft PowerPoint
 
 ## Disponibilidade
-Monografia: em breve
-Sistema: em breve
-Hospedagem utilizada: em breve
+* Monografia: em breve
+* Sistema: em breve
+* Hospedagem utilizada: em breve
