@@ -12,36 +12,45 @@
         <div id="menuLateral" class="menuLateral">
             <nav class="menu">
                 <div id="icon">
-                    <button id="btnClose" onclick="fechaMenu();"></button>
-                    <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
-                    <p>Ol&aacute;, Seja bem-vindo!</p>
+                    <div>
+                        <button id="btnClose" onclick="fechaMenu();">X</button>
+                    </div>
+                    <div>
+                        <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema" class="img-menu">
+                    </div>
+                    <div>
+                        <p class="texto-menu">Ol&aacute;, Seja bem-vindo!</p>
+                    </div>
                 </div>
                 <div class="lista-nav">
                     <ul>
-                        <li><a href="../login/user_list.php">Lista de usu&aacute;rios</a></li>
-                        <li><a href="../user/alterar_senha.php">Alterar senha</a></li>
-                        <li><a href="../user/alterar_status.php">Alterar status</a></li>
+                        <li class="item-lista"><a href="../login/user_list.php" style="color:black; text-decoration:none; margin-left: 10px;">Lista de usu&aacute;rios</a></li>
+                        <li class="item-lista"><a href="../user/alterar_senha.php" style="color:black; text-decoration:none; margin-left: 10px;">Alterar senha</a></li>
+                        <li class="item-lista"><a href="../user/alterar_status.php" style="color:black; text-decoration:none; margin-left: 10px;">Alterar status</a></li>
                     </ul>
                 </div>
-                <div>
-                    <a href="../login/logout.php">Sair</a>
+                <div class="logout">
+                    <button type="button" id="btn-logout"><a href="../login/logout.php" style="color:white; text-decoration:none; padding-right:8px;">Sair</a><img src="../assets/sign-out-option.png" style="height:10px; width:10px; background-color:white;"></button>
                 </div>
             </nav>
         </div>
         <div id="tela-body" class="tela-body">
-            <div></div>
-            <div>
+            <div id="mostrar-menu">
                 <span style="font-size:30px; cursor:pointer;">
-                    <button type="button" onclick="mostraMenu();">Menu</button>
+                    <button type="button" id="btn-menu" onclick="mostraMenu();"><img class="btn-logo-menu" src="../assets/bars-solid.png"></button>
                 </span>
             </div>
-            <div>
-                <div>
+            <div class="tela-container">
+                <span id="cadastro-container">
+                    <img src="../assets/register_icon.png">
+                    <br><br><br>
                     <a href="../cadastro/tela_cadastro_principal.php">Cadastro</a>
-                </div>
-                <div>
+                </span>
+                <span id="consulta-container">
+                    <img src="../assets/search_icon.png">
+                    <br><br><br>
                     <a href="../consulta/tela_consulta.php">Consulta</a>
-                </div>
+                </span>
             </div>
         </div>
     </body>
