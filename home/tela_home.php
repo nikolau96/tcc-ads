@@ -5,8 +5,8 @@
         <link rel="stylesheet" type="text/css" href="../css/style-home.css">
     </head>
     <body>
-        <header>
-            <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
+        <header class="cabecalho">
+            <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema" class="imgsys">
             <div id="linha"></div>
         </header>
         <div id="menuLateral" class="menuLateral">

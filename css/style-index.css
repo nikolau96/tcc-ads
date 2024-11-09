@@ -55,12 +55,14 @@ body{
     border: 1px solid gray;
     border-radius: 5px;
     width: 220px;
+    height: 22px;
 }
 #senha{
     border: 1px solid gray;
     border-radius: 5px;
     margin-bottom: 15px;
     width: 220px;
+    height: 22px;
 }
 #btnLogin{
     margin-bottom: 20px;

@@ -2,6 +2,13 @@ body{
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
 }
+.cabecalho img{
+    left: 639px;
+    top: 27px;
+    width: 144px;
+    height: 162px;
+    padding-left: 50px;
+}
 .menuLateral{
     height: 100%;
     width: 0;
