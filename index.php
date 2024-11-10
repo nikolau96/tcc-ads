@@ -19,7 +19,7 @@
                             <input type="password" id="senha" name="senha">
                         </div>
                         <div id="btnLogin">
-                            <input type="submit" value="Entrar" style="border-radius: 5px; background-color: #2c2c2c; color: #ffffff; border: none; width: 70px;">
+                            <input type="submit" value="Entrar" style="border-radius: 5px; background-color: #2c2c2c; color: #ffffff; border: none; width: 70px; height:30px; cursor:pointer;">
                         </div>
                     </form>
                 </div>

@@ -2,60 +2,62 @@
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/style-form.css">
     </head>
     <body>
-        <header>
-            <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
+        <header class="cabecalho">
+            <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema" class="imgsys">
             <div id="linha"></div>
         </header>
         <div class="title">
-            <h3>Cadastro de Atendimento</h3>
+            <h2>CADASTRO DE ATENDIMENTO</h2>
         </div>
-        <div>
+        <div class="form">
             <form action="/cadastro/grava_atendimento.php" method="post">
-                <div>
+                <div class="row">
                     <label for="dtAtendimento">
-                        <h4>Data de Atendimento</h4>
-                        <input type="date" id="dtAtendimento" name="dtAtendimento">
+                        <p>Data de Atendimento</p>
+                        <input type="date" id="dtAtendimento" name="dtAtendimento" class="input-form">
                     </label>
                     <label for="cliente">
-                        <h4>Cliente</h4>
-                        <input type="text" id="cliente" name="cliente">
+                        <p>Cliente</p>
+                        <input type="text" id="cliente" name="cliente" class="input-form">
                     </label>
                     <label for="vendedor">
-                        <h4>Vendedor</h4>
-                        <input type="text" id="vendedor" name="vendedor">
+                        <p>Vendedor</p>
+                        <input type="text" id="vendedor" name="vendedor" class="input-form">
                     </label>
                     <label for="usuario">
-                        <h4>Usuário que cadastrou</h4>
-                        <input type="text" id="usuario" name="usuario">
+                        <p>Usu&aacute;rio que cadastrou</p>
+                        <input type="text" id="usuario" name="usuario" class="input-form">
                     </label>
                 </div>
-                <div>
+                <div class="row">
                     <label for="produto">
-                        <h4>Produto/Servi&ccedil;o</h4>
-                        <input type="text" id="produto" name="produto">
+                        <p>Produto/Servi&ccedil;o</p>
+                        <input type="text" id="produto" name="produto" class="input-form">
                     </label>
                     <label for="assunto">
-                        <h4>Assunto</h4>
-                        <input type="text" id="assunto" name="assunto">
+                        <p>Assunto</p>
+                        <input type="text" id="assunto" name="assunto" class="input-form">
                     </label>
                 </div>
-                <div>
+                <div class="row">
                     <label for="descricao">
-                        <h4>Descri&ccedil;&atilde;o</h4>
-                        <input type="text" id="descricao" name="descricao">
+                        <p>Descri&ccedil;&atilde;o</p>
+                        <input type="text" id="descricao" name="descricao" class="input-form">
                     </label>
                 </div>
-                <div>
+                <div class="row">
                     <label for="solucao">
-                        <h4>Solu&ccedil;&atilde;o</h4>
-                        <input type="text" id="solucao" name="solucao">
+                        <p>Solu&ccedil;&atilde;o</p>
+                        <input type="text" id="solucao" name="solucao" class="input-form">
                     </label>
                 </div>
                 <div>
-                    <input type="reset" value="Cancelar">
-                    <input type="submit" value="Gravar">
+                    <button type="button"><a href="../home/tela_home.php">Cancelar</a></button>
+                    <input type="reset" value="Limpar" class="btn-form-no">
+                    <input type="submit" value="Gravar" class="btn-form-yes">
                 </div>
             </form>
         </div>
