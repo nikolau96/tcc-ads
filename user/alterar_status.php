@@ -2,30 +2,31 @@
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/style-form.css">
     </head>
     <body>
-        <header>
-            <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema">
+        <header class="cabecalho">
+            <img src="../logo/SGC_logo_nova.png" alt="Logo do Sistema" class="imgsys">
             <div id="linha"></div>
         </header>
-        <div>
-            <h3>Alterar Status</h3>
+        <div class="title">
+            <h2>ALTERAR STATUS</h2>
         </div>
-        <div>
+        <div class="form">
             <form action="/user/mudar_status.php" method="post">
-                <div>
+                <div class="row">
                     <label for="user">
-                        <h4>Digite o usu&aacute;rio</h4>
-                        <input type="text" id="user" name="user">
+                        <p>Digite o usu&aacute;rio</p>
+                        <input type="text" id="user" name="user" class="input-form">
                     </label>
                     <label for="status">
-                        <h4>Digite o status</h4>
-                        <input type="text" id="status" name="status">
+                        <p>Digite o status</p>
+                        <input type="text" id="status" name="status" class="input-form">
                     </label>
                 </div>
                 <div>
-                    <button><a href="../home/tela_home.php">Voltar</a></button>
-                    <input type="submit" value="Gravar">
+                    <button type="button"><a href="../home/tela_home.php">Voltar</a></button>
+                    <input type="submit" value="Gravar" class="btn-form-yes">
                 </div>
             </form>
         </div>

@@ -9,7 +9,7 @@
             $SQL = "SELECT * FROM usuario";
             $registro = mysqli_query($conexao, $SQL);
             $qtdRegistro = mysqli_num_rows($registro);
-            echo "<table>";
+            echo "<table border = 1 style='text-align:center;margin-top:50px;margin-left:530px';>";
             echo "  <tr>";
             echo "      <td>Nome</td>";
             echo "      <td>Login</td>";
@@ -29,7 +29,7 @@
             }
             echo "</table>";
             print_r($linha);
-            echo "<button><a href='../home/tela_home.php'>Voltar</a></button>";
+            echo "<button style='margin-top:180px;margin-left:600px;border-radius:5px;border:none;width:100px;height:30px;background-color:#2c2c2c;cursor:pointer;'><a href='../home/tela_home.php' style='color:white;text-decoration:none;'>Voltar</a></button>";
         ?>
     </body>
 </html>
