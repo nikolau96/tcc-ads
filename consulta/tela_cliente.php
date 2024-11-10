@@ -2,28 +2,29 @@
     <head>
         <title>Sistema de Gerenciamento de Clientes</title>
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/style-form-consulta.css">
     </head>
     <body>
-        <header>
-            <img src="../favicon.png" alt="Logo do Sistema">
+        <header class="cabecalho">
+            <img src="../favicon.png" alt="Logo do Sistema" class="imgsys">
             <div id="linha"></div>
         </header>
-        <div>
-            <h3>Consulta de Cliente</h3>
+        <div class="title">
+            <h2>CONSULTA DE CLIENTE</h2>
         </div>
-        <div>
+        <div class="form">
             <form action="/consulta/busca_cliente.php">
-                <h4>Pesquisar Cliente</h4>
+                <p>Mostrar Clientes</p>
                 <!--<h4>Pesquisar por:</h4>
                 <label for="nome">
                     <h4>Nome</h4>
                     <input type="text" id="nome" name="nome">
                 </label>-->
-                <input type="submit" value="Pesquisar">
+                <input type="submit" value="Pesquisar" class="btn-form">
             </form>
         </div>
         <div>
-            <button type="button"><a href="../home/tela_home.php">Voltar</a></button>
+            <button type="button" id="btn-voltar"><a href="../home/tela_home.php">Voltar</a></button>
         </div>
     </body>
 </html>
