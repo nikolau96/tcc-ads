@@ -3,7 +3,7 @@
     include('../db/database.php');
     include("../functions/verificar.php");
     if(empty($_POST['login']) || empty($_POST['senha'])){
-        echo "<p>Erro: login ou senha n&atilde;o informado</p>";
+        echo "<p style='text-align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:red;'>Erro: login ou senha n&atilde;o informado</p>";
         header('Location: ../index.php');
         exit();
     }
@@ -11,7 +11,7 @@
     $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
     $existe = verificaStatus($usuario);
     if($existe == true){
-        echo "<p>Acesso Negado</p>";
+        echo "<p style='text-align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:red;'>Acesso Negado</p>";
         header('Location: ../index.php');
         exit();
     }
