@@ -19,7 +19,6 @@
         echo "<p style='text-align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:red;'>Erro: Esse vendedor j&aacute existe no sistema!</p>";
     }
     $SQL = "INSERT INTO vendedor (nome, cpf, sexo, dt_nascimento, telefone, celular, email, conselho, nr_conselho) VALUES ('$nome', '$cpf', '$sexo', '$dt_nascimento', '$telefone', '$celular', '$email', '$conselho', '$nr_conselho')";
-    echo "$SQL";
     $stmt = $conexao->prepare($SQL);
     if($stmt->execute() == true){
         echo "<p style='text-align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color:green;'>Vendedor cadastrado com sucesso</p>";
