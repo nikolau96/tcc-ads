@@ -2,9 +2,9 @@
 
 Seja bem-vindo(a) ao repositório do Sistema de Gerenciamento de Clientes, tema desenvolvido para o Trabalho de Graduação do curso de Análise e Desenvolvimento de Sistemas da Universidade de Taubaté.
 
-Esse trabalho foi desenvolvido por Nickolas Markus da Silva Costa, desenvolvedor de sistemas e estudante prestes a ser formar como analista de sistemas. Se quiser me conhecer um pouco mais, acesse as minhas principais redes sociais:
+Esse trabalho foi desenvolvido por Nickolas Markus da Silva Costa, desenvolvedor de sistemas e estudante prestes a ser formar como analista de sistemas. Se quiser conhecer outros trabalhos que desenvolvi, acesse o meu perfil no GitHub:
 
-[Linkedin](https://www.linkedin.com/in/nickolas09) | [Github](https://github.com/nikolau96)
+[Github](https://github.com/nikolau96)
 
 ## Resumo do projeto
 
