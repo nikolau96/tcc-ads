@@ -22,7 +22,7 @@ O projeto consiste em desenvolver um sistema de gerenciamento de atendimento ao 
 Obs.: Para a elaboração da monografia, foi utilizado o Microsoft Word e para a defesa do trabalho na banca foi utilizado o Microsoft PowerPoint
 
 ## Monografia
-Para visualizar a monografia escrita do trabalho, acesse o link: _Em breve_
+Para visualizar a monografia escrita do trabalho, basta acessar a pasta **Monografia** do projeto e baixar o trabalho em .pdf
 
 ## Sugestões Futuras
 A seguir, uma lista de ideias para o projeto em contribuições futuras. Essas ideias foram consideradas durante o desenvolvimento, porém, por conta do prazo de entrega e da complexidade de algumas funcionalidades, elas não foram executadas.
